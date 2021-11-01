@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+a,
+div,
+ul,
+li,
+p,
+span,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.leave-search {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  margin: 20px;
+}
+.leave-search.active .leave-list {
+  opacity: 1;
+  visibility: visible;
+}
+.leave-search .query {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: none;
+  padding: 10px;
+}
+.leave-search .leave-list {
+  position: absolute;
+  box-sizing: border-box;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  min-width: 100%;
+  padding: 10px 0;
+  margin-top: 10px;
+  transform: translateY(-5px);
+  max-height: 200px;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0 5px 5px grey;
+  cursor: pointer;
+}
+.leave-search .leave-list::-webkit-scrollbar {
+  width: 4px;
+}
+.leave-search .leave-list::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+.leave-search .leave-list > ul > li.item {
+  padding: 5px 15px;
+}
+.leave-search .leave-list > ul > li.item:hover {
+  background-color: grey;
+}
